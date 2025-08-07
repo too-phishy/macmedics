@@ -17,12 +17,6 @@ const app = express();
 app.set("trust proxy", true);
 app.use(express.json());
 
-const CUSTOMER_LIST = new Set([
-  "lydia.stepanek@gmail.com",
-  "gsmtestuser@marketplacetest.net",
-  "gsmtestadmin@marketplacetest.net",
-]);
-
 app.post(
   "/",
   asyncHandler(async (req, res) => {
