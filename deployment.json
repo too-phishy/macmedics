@@ -6,17 +6,17 @@
   ],
   "addOns": {
     "common": {
-      "name": "Too Phishy",
-      "logoUrl": "https://toophishy.com/logo.png"
+      "name": "MacMedics Shield",
+      "logoUrl": "https://www.toophishy.com/macmedics.png"
     },
     "gmail": {
       "homepageTrigger": {
-        "runFunction": "https://us-central1-too-phishy.cloudfunctions.net/loadHomePage"
+        "runFunction": "https://us-central1-macmedics.cloudfunctions.net/loadHomePage"
       },
       "contextualTriggers": [
         {
           "unconditional": {},
-          "onTriggerFunction": "https://too-phishy-802749066565.us-central1.run.app"
+          "onTriggerFunction": "https://macmedics-423279422637.us-central1.run.app"
         }
       ]
     }

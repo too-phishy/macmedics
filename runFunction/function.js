@@ -14,7 +14,8 @@ function createAction() {
                 widgets: [
                   {
                     image: {
-                      imageUrl: "https://www.toophishy.com/gmail_logo.png",
+                      imageUrl:
+                        "https://www.toophishy.com/macmedics-powered-by-too-phishy.png",
                       altText: "MacMedics",
                       onClick: {
                         openLink: {
