@@ -74,6 +74,7 @@ app.post(
 app.post(
   "/submitForm",
   asyncHandler(async (req, res) => {
+    const baseUrl = `${req.protocol}://${req.hostname}${req.baseUrl}`;
     const event = req.body;
     const formInputs = event.commonEventObject.formInputs;
     const linksResponse = formInputs?.links?.stringInputs.value[0];
@@ -82,6 +83,7 @@ app.post(
     const nameResponse = formInputs?.name?.stringInputs.value;
     const phoneNumberResponse = formInputs?.phone_number?.stringInputs.value;
     const pushCard = cardForSendingSupportRequest(
+      baseUrl,
       linksResponse,
       attachmentsResponse,
       passwordResponse,
